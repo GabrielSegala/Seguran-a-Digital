@@ -1,0 +1,15 @@
+1) HTTP → Camada de Aplicação
+ARP → Camada de Acesso à Rede
+UDP → Camada de Transporte
+Ethernet → Camada de Acesso à Rede
+
+2) Máscara: 255.255.255.224
+Hosts utilizáveis: 30
+
+3) Transporte: TCP
+Serviço: HTTPS
+
+4) TCP garante a entrega confiável e ordenada dos dados, enquanto UDP envia os dados mais rapidamente, sem garantir entrega, ordem ou correção de erros.
+
+5) Um endereço IP privado, como 192.168.0.5, não aparece diretamente na internet porque ele é válido apenas dentro de redes locais e não é roteado na internet pública; para acessar a internet, o roteador realiza NAT (Network Address Translation), substituindo o IP privado por um endereço IP público.
+

@@ -1,0 +1,26 @@
+1) Uma empresa tem o bloco
+192.168.10.0/24. Quantos hosts
+utilizáveis existem nessa rede? Qual o
+endereço de broadcast?
+
+254 utilizáveis rede sera 192.168.10.0/24 e broadcast 255 192.168.10.255/24.
+
+2)Você precisa dividir 192.168.20.0/24
+em 4 sub-redes de tamanho igual. Qual
+máscara usar, e quais os blocos
+resultantes?
+
+
+ira usar uma /26 para separar em 4 subredes em mascara 255.255.255.192 pois para 4 subredes precisamos 2 bits = ( 26-24 = 2 ) 2^2 = 4 subredes
+
+	os blocos ficam  
+ 192.168.20.0 -  192.168.20.63
+ 192.168.20.64 -  192.168.20.127
+ 192.168.20.128 -  192.168.20.193
+ 192.168.20.194 -  192.168.20.255
+
+3)Dois hosts, 10.0.5.12/26 e
+10.0.5.80/26, estão na mesma subrede? Justifique com o cálculo.
+
+Não estão na mesma subrede pois em /26 cada bloco e de 64 pois o primeiro bloco é de 10.0.5.0 até 10.0.5.63 e o segundo passa desse bloco ( 10.0.5.80/26 )
+  

@@ -1,0 +1,16 @@
+1- O host 192.168.1.5, usando a porta 52000, acessa um site pela porta 443. Para realizar essa comunicação, o roteador
+traduz o endereço privado para o IP público 201.10.5.90 e escolhe uma porta pública, por exemplo 30000.
+
+Linha da tabela de tradução:
+
+192.168.1.5:52000 → 201.10.5.90:30000 → servidor:443
+
+
+2- No PAT, quando dois dispositivos internos usam a mesma porta de origem 50000, o roteador resolve 
+o conflito atribuindoportas públicas diferentes para cada conexão. Assim, ele consegue identificar 
+para qual dispositivo cada resposta deve voltar.
+
+
+3- É necessário configurar um NAT estático (Port Forwarding), direcionando a porta 80 do IP público
+para a porta 8080 do servidor interno 192.168.1.20, assim, quando alguém acessar o IP público pela 
+porta 80, o roteador encaminhará a conexão para o servidor.

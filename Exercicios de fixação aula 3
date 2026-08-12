@@ -1,0 +1,19 @@
+1- O 192.168.0.5 não aparece diretamente na internet porque ele é um endereço usado apenas dentro de redes privadas, 
+como o Wi-Fi de uma casa. Quando você acessa a internet, o roteador troca esse endereço pelo IP público da rede. 
+Por isso, para a internet, aparece o IP do roteador, e não o 192.168.0.5.
+
+
+2- Static NAT: associa um IP privado a um IP público fixo, sempre mantendo a mesma correspondência.
+Dynamic NAT: associa IPs privados a IPs públicos disponíveis de forma temporária e automática.
+PAT (NAT Overload): permite que vários IPs privados usem o mesmo IP público, diferenciando as conexões pelas portas.
+
+
+3- Ele consegue usando PAT (NAT Overload), que permite que os 30 dispositivos compartilhem o mesmo IP público, diferenciando cada conexão pelas portas.
+
+
+4- Porque eles ajudam a conectar duas pessoas mesmo quando estão atrás de roteadores e NAT: o STUN descobre o endereço público,
+o ICE escolhe o melhor caminho para a conexão e o TURN serve como “ponte” quando a conexão direta não funciona.
+
+
+5- CGNAT é quando a operadora coloca vários clientes compartilhando o mesmo IP público; isso dificulta expor um serviço próprio porque você não recebe
+um IP público exclusivo e, normalmente, não consegue fazer redirecionamento de portas diretamente até seu dispositivo.

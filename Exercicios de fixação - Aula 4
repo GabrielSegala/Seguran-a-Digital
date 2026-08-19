@@ -1,0 +1,10 @@
+1. Varredura de portas: identifica quais portas de um dispositivo estão abertas, fechadas ou filtradas.
+   Enumeração de serviços: identifica quais serviços e, quando possível, quais versões estão associados às portas encontradas.
+
+2. O SYN scan é mais discreto porque geralmente não completa o estabelecimento da conexão TCP, enquanto o Connect scan realiza a conexão completa.
+
+3. Filtered significa que algum mecanismo, como firewall ou filtro de rede, impede determinar se a porta está aberta ou fechada; closed significa que o alvo respondeu e indicou que não há serviço escutando naquela porta.
+
+4. O NAT oculta os endereços dos dispositivos internos e, normalmente, só expõe externamente os serviços/portas que possuem regras de encaminhamento, limitando o que uma varredura externa consegue observar.
+
+5. O banner grabbing pode revelar, por exemplo, o nome do software/serviço e sua versão.

@@ -1,0 +1,7 @@
+Fiz o scan no `scanme.nmap.org` usando o comando indicado. O resultado mostrou que o computador estava ativo e que a maioria das portas estava fechada.
+
+As portas que apareceram como abertas foram 22, 2000, 5060, 9929 e 31337. A porta 22 foi identificada como SSH,
+a 9929 como nping-echo e as outras apareceram como tcpwrapped. A porta 80 apareceu como filtered, ou seja, 
+o Nmap não conseguiu confirmar se ela estava aberta por causa de algum filtro.
+
+Também foi identificado que o sistema utilizado pelo alvo é Linux.
